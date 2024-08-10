@@ -16,6 +16,7 @@ const ButtonStyle = ({
     warning,
     roundedButton,
     outlinedButton,
+    outOfStock,
     ...rest
 }) => {
     const classes = className(rest.className,'flex items-center rounded-md px-3 py-1.5 border', {
@@ -24,6 +25,7 @@ const ButtonStyle = ({
         'borde-green-900 bg-green-700 text-indigo-50': success,
         'border-yellow-900 bg-yellow-700 text-indigo-50': warning,
         'border-red-900 bg-red-700 text-indigo-50': danger,
+        'border-gray-600 bg-neutral-400 text-gray-600':outOfStock,
         'rounded-full': roundedButton,
         'bg-transparent border-black': outlinedButton,
         "text-blue-500": outlinedButton && primary,
